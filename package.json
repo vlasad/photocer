@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf _site",
     "serve": "npm-run-all clean --parallel serve:*",
-    "serve:eleventy": "eleventy --serve --quiet",
+    "serve:eleventy": "eleventy --serve",
     "serve:tailwind": "parcel src/assets/css/* --dist-dir _site/assets/css",
     "build": "npm-run-all clean build:eleventy build:tailwind",
     "build:eleventy": "eleventy",
