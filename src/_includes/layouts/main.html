@@ -5,7 +5,9 @@
   </head>
   <body>
     {% include "layouts/shared/header.html" %}
-    {{ content | safe }}
+    <div class="max-w-screen-md mx-auto p-6">
+      {{ content | safe }}
+    </div>
     {% include "layouts/shared/footer.html" %}
   </body>
 </html>
