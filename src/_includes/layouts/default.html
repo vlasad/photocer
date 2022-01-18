@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% include "layouts/shared/head.html" %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
   </head>
   <body>
-    <div class="shadow-md">
-      {% include "layouts/shared/header.html" %}
-    </div>
-    <div class="max-w-screen-md mx-auto px-2 py-4">
-      {{ content | safe }}
-    </div>
-    {% include "layouts/shared/footer.html" %}
+    {{ content | safe }}
   </body>
 </html>
